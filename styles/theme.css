@@ -1,0 +1,125 @@
+/* THEME TOGGLE COLOR */
+.light {
+  background: #f4f4f4;
+  color: #333;
+  transition: ease-in-out;
+  transition-duration: 0.9s;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.light a {
+  color: #262729;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.light .side-bar {
+  background: #ffffff !important;
+  color: #000;
+  transition: ease-in-out;
+  transition-duration: 0.9s;
+}
+
+.dark .side-bar {
+  background-color: #262729 !important;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.light .side-bar-mobile {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.dark .side-bar-mobile {
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
+.light .content {
+  background-color: #ffffff;
+  color: #000;
+  transition: ease-in-out;
+  transition-duration: 0.9s;
+}
+
+.dark .content {
+  background-color: #262729;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.light .content input.form-control,
+.light .content textarea.form-control {
+  transition: ease-in-out;
+  transition-duration: 0.9s;
+}
+
+.dark .content input.form-control,
+.dark .content textarea.form-control {
+  background-color: #262729;
+  color: #fff;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+  outline: none;
+  border: 1px solid grey;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  body .content {
+    background-color: #ffffff;
+    color: #000;
+    transition: ease-in-out;
+    transition-duration: 0.9s;
+
+  }
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: #1e1e1e;
+    color: #fff;
+  }
+
+  body .content {
+    background-color: #262729;
+    color: #fff;
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+
+  .content input.form-control,
+  .content textarea.form-control {
+    background-color: #262729;
+    color: #fff;
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+    outline: none;
+    border: 1px solid grey;
+  }
+}
