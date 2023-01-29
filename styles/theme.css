@@ -63,6 +63,10 @@
 .light .content textarea.form-control {
   transition: ease-in-out;
   transition-duration: 0.9s;
+  color: #212529;
+    background-color: #fff !important;
+    background-clip: padding-box;
+      border: 1px solid #ced4da;
 }
 
 .dark .content input.form-control,
@@ -90,10 +94,7 @@
     color: #000;
     transition: ease-in-out;
     transition-duration: 0.9s;
-
   }
-
-
 }
 
 @media (prefers-color-scheme: dark) {
